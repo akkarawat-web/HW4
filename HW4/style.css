@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5efff, #fff5f8);
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(80, 40, 100, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #6d3bb8;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #6d3bb8;
+    font-size: 21px;
+    border-left: 5px solid #d16ba5;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #4a4055;
+    margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ddd2e8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fcfaff;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #9b6dcc;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 11px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #6d3bb8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #592d9c;
+}
+
+button.reset {
+    background: #ddd6e3;
+    color: #444;
+    margin-left: 5px;
+}
+
+button.reset:hover {
+    background: #cfc6d5;
+}
+
+
+/* สำหรับหน้าจอมือถือ */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button.reset {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>สมัครนักศึกษาใหม่</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>แบบฟอร์มสมัครนักศึกษาใหม่</h1>
+
+        <p class="subtitle">กรุณากรอกข้อมูลให้ครบถ้วน</p>
+
+
+        <form>
+
+            <!-- ข้อมูลส่วนตัว -->
+
+            <h2>ข้อมูลส่วนตัว</h2>
+
+            <div class="row">
+
+                <div class="input-box">
+                    <label>ชื่อ</label>
+                    <input type="text" placeholder="กรอกชื่อ">
+                </div>
+
+                <div class="input-box">
+                    <label>นามสกุล</label>
+                    <input type="text" placeholder="กรอกนามสกุล">
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="input-box">
+                    <label>เลขบัตรประชาชน</label>
+                    <input type="text" placeholder="กรอกเลขบัตรประชาชน">
+                </div>
+
+                <div class="input-box">
+                    <label>วันเกิด</label>
+                    <input type="date">
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="input-box">
+                    <label>น้ำหนัก (กิโลกรัม)</label>
+                    <input type="number" placeholder="เช่น 60">
+                </div>
+
+                <div class="input-box">
+                    <label>ส่วนสูง (เซนติเมตร)</label>
+                    <input type="number" placeholder="เช่น 170">
+                </div>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>เพศ</label>
+
+                <input type="radio" name="gender">
+                ชาย
+
+                <input type="radio" name="gender">
+                หญิง
+
+            </div>
+
+
+            <!-- ข้อมูลการสมัคร -->
+
+            <h2>ข้อมูลการสมัครเรียน</h2>
+
+
+            <div class="input-box">
+
+                <label>สาขาวิชา</label>
+
+                <select>
+
+                    <option>-- เลือกสาขาวิชา --</option>
+                    <option>IT</option>
+                    <option>ITI</option>
+                    <option>ITT</option>
+                    <option>INE</option>
+                    <option>INET</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="input-box">
+
+                    <label>วุฒิการศึกษา</label>
+
+                    <select>
+
+                        <option>-- เลือกวุฒิการศึกษา --</option>
+                        <option>ม.6</option>
+                        <option>ปวช.</option>
+                        <option>ปวส.</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label>เกรดเฉลี่ย (GPA)</label>
+
+                    <input type="number"
+                           step="0.01"
+                           placeholder="เช่น 3.25">
+
+                </div>
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>โรงเรียนเดิม</label>
+
+                <input type="text"
+                       placeholder="กรอกชื่อโรงเรียน">
+
+            </div>
+
+
+            <!-- ข้อมูลติดต่อ -->
+
+            <h2>ข้อมูลการติดต่อ</h2>
+
+
+            <div class="row">
+
+                <div class="input-box">
+
+                    <label>เบอร์โทรศัพท์</label>
+
+                    <input type="tel"
+                           placeholder="08X-XXX-XXXX">
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label>Email</label>
+
+                    <input type="email"
+                           placeholder="example@email.com">
+
+                </div>
+
+            </div>
+
+
+           <div class="input-box">
+
+                <label>ที่อยู่</label>
+
+                <textarea rows="2"
+                    placeholder="กรอกที่อยู่"></textarea>
+
+            </div>
+
+
+            <!-- เอกสาร -->
+
+            <h2>เอกสาร/หลักฐาน</h2>
+
+
+            <div class="input-box">
+
+                <label>1. รูปถ่าย</label>
+
+                <input type="file">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>2. วุฒิการศึกษา</label>
+
+                <input type="file">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>3. บัตรประชาชน</label>
+
+                <input type="file">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>4. ทะเบียนบ้าน</label>
+
+                <input type="file">
+
+            </div>
+
+
+            <!-- ปุ่ม -->
+
+            <div class="button">
+
+                <button type="submit">
+                    สมัครเรียน
+                </button>
+
+                <button type="reset" class="reset">
+                    ล้างข้อมูล
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
